@@ -1,0 +1,39 @@
+<!doctype html>
+
+<!-- ASSIGN OUR ANGULAR MODULE -->
+<html ng-app="riseScholar">
+<head>
+	<!-- META -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1"><!-- Optimize mobile viewport -->
+
+	<title>Rise Scholar</title>
+
+	<style>
+		html 					{ overflow-y:scroll; }
+		body 					{ padding-top:50px; }
+		#todo-list 				{ margin-bottom:30px; }
+		#todo-form 	 			{ margin-bottom:50px; }
+	</style>
+
+	<!-- JAVASCRIPTS -->
+	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.min.js"></script><!-- load angular -->
+	<script src="js/controllers/main.js"></script> <!-- load up our controller -->
+	<script src="js/services/api.js"></script> <!-- load our api service-->
+	<script src="js/core.js"></script> <!-- load our main application -->
+
+</head>
+<!-- SET THE CONTROLLER -->
+<body ng-controller="mainController">
+	<div class="container">
+
+		<!-- HEADER AND TODO COUNT -->
+		<div class="jumbotron text-center">
+			<h1><span class="label label-info">{{ todos.length }}</span></h1>
+		</div>
+
+
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,103 @@
+/* 
+    Created on : Dec 15, 2015, 4:50:52 PM
+    Author     : Mershack Okoe
+*/
+
+body{
+    margin: auto;
+    min-width: 800px;
+    max-width:1200px;
+
+}
+#beforeHeader{
+    min-height: 10px;
+    background-color: brown;
+}
+
+#header{
+    margin: 10px;
+    padding-bottom: 20px;
+}
+.headerItem{
+    padding: 5px;
+    margin-left: 15px;
+    min-width: 50px;
+    //    font-size: 20px;
+}
+#headerItems{
+    padding-top: 10px;
+    float: right;
+}
+a.headerItem{
+    text-decoration: none;
+    /*text-decoration: overline;*/
+    font-weight: bold;
+    font-color: red;
+    border-bottom: 2px solid gray;
+}
+a.headerItem:hover, a.headerItem:active{
+    color:red;
+    border-bottom: 3px solid red;
+}
+#footerItems{
+
+    margin-left:20px;
+    margin-right: 10px;
+}
+#footer{
+    clear: both;
+    margin-top: 50px;
+}
+#below-footer{
+    min-height: 20px;
+    background-color: brown;
+    color: white;
+    padding-left: 20px;
+}
+.belowHeaderImage img{
+    width:1200px;
+    height: 300px;
+}
+
+ul {
+    list-style-image: url('images/bullet-image2.png');
+}
+li{
+    margin-top:10px;
+}
+#header img{
+    height: 100px;
+}
+
+#mainContent{
+    margin: 20px;
+}
+.email{
+    color:#000d33;
+}
+.rightDiv{
+    float: right;
+}
+.leftDiv{
+   // width: 300px;
+}
+.serviceContainer{
+   // width: 1100px;
+}
+.servicelist{
+    float: left;   
+    margin-right: 100px;
+}
+
+.resourcelist{
+    float: left;
+    margin-right: 6 0px;
+}
+
+.clearFloat{
+    clear: both;
+}
+.serviceListImg{
+    margin-left: 5px;
+    //margin-right: 50px;
+}
