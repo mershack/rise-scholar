@@ -6,66 +6,77 @@ and open the template in the editor.
 -->
 <html>
     <head>
-        <title>Home</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width">
-        <link href="rise.css"  rel="stylesheet" type="text/css" />
+      <title>Home</title>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width">
+      <link href="rise.css"  rel="stylesheet" type="text/css" />
 
-        <!-- CSS -->
-        <link rel="stylesheet" href="/node_modules/angular-material/angular-material.css">
+      <!-- CSS -->
+      <!-- <link rel="stylesheet" href="../node_modules/angular-material/angular-material.min.css"> -->
+      <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/1.0.0/angular-material.min.css">
 
         <!-- Scripts -->
-        <script src="/node_modules/angular-material/angular.js"></script>
-        <script src="/node_modules/angular-material/angular-animate.js"></script>
-        <script src="/node_modules/angular-material/angular-aria.js"></script>
-        <script src="/node_modules/angular-material/angular-messages.js"></script>
-        <script src="/node_modules/angular-material/angular-material.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-animate.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-aria.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-messages.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.0.0/angular-material.min.js"></script>
 
-        <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.min.js"></script><!-- load angular -->
-        <script src="js/controllers/main.js"></script> <!-- load up our controller -->
-      	<script src="js/services/api.js"></script> <!-- load our todo service -->
-      	<script src="js/core.js"></script> <!-- load our main application -->
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.min.js"></script><!-- load angular -->
+      <script src="js/controllers/main.js"></script> <!-- load up our controller -->
+    	<script src="js/services/api.js"></script> <!-- load our todo service -->
+    	<script src="js/core.js"></script> <!-- load our main application -->
+
+
+      <!-- Your application bootstrap  -->
+       <script type="text/javascript">
+         /**
+          * You must include the dependency on 'ngMaterial'
+          */
+         angular.module('riseScholarApp', ['ngMaterial']);
+       </script>
+
+
     </head>
-    <body>
-        <div id="beforeHeader"> </div>
-
-        <div id="header">
-            <img src="images/rise-logo.png" height="70"/>
-            <div id="headerItems">
-                <a class="headerItem" href="index.html">Home</a>
-                <a class="headerItem" href="services.html">What We Do</a>
-                <a class="headerItem" href="partners.html">Our Partners</a>
-                <a class="headerItem" href="mission.html">Mission</a>
-                <a class="headerItem" href="vision.html">Vision</a>
-                <a class="headerItem" href="objective.html">Objective</a>
-                <a class="headerItem" href="resources.html">Resources</a>
-                <a class="headerItem" href="about.html">About Us</a>
-                <a class="headerItem" href="contact.html">Contact Us</a>
-            </div>
+    <body ng-app="riseScholarApp">
+      <div class="header-container">
+        <div class="header" flex layout="row">
+          <div class="logo">
+            <img src="images/rise-logo.png" height="70"   />
+          </div>
+          <div class="nav" flex="80">
+            <a class="headerItem" href="index.html">Home</a>
+            <a class="headerItem" href="services.html">What We Do</a>
+            <a class="headerItem" href="partners.html">Our Partners</a>
+            <a class="headerItem" href="mission.html">Mission</a>
+            <a class="headerItem" href="vision.html">Vision</a>
+            <a class="headerItem" href="objective.html">Objective</a>
+            <a class="headerItem" href="resources.html">Resources</a>
+            <a class="headerItem" href="about.html">About Us</a>
+            <a class="headerItem" href="contact.html">Contact Us</a>
+          </div>
         </div>
+      </div>
 
+      <div class="wrapper">
         <div class="belowHeaderImage">
             <img src="images/eagle3.png"/>
         </div>
 
         <div id="mainContent">
+          <p>
+            <strong>Recruitment Innovation for Student Empowerment (R.I.S.E)</strong>
+             is a non-profit consulting group
+            committed to providing students preparing for college education with professional guidance;
+            to make informed decisions about their career path.
+          </p>
+           <p>
+              <strong>R.I.S.E </strong>  partners with academia, families, communities, corporations, and institutions in seeking
+              financial support and leveraging available resources towards a <strong>R.I.S.E</strong> scholar's college education.
 
-            <h2>Home</h2>
-            <p>
-                Recruitment Innovation for Student Empowerment (R.I.S.E) is a non-profit consulting group
-                committed to providing students preparing for college education with professional guidance;
-                to make informed decisions about their career path.
+               R.I.S.E. collaborates with students, faculty, and staff to identify obstacles, provide early intervention and/or
+              services to empower students in attaining their educational goals.
             </p>
-             <p>
-                R.I.S.E. partners with academia, families, communities, corporations, and institutions in seeking
-                financial support and leveraging available resources towards a R.I.S.E. scholar's college education.
-
-                 R.I.S.E. collaborates with students, faculty, and staff to identify obstacles, provide early intervention and/or
-                services to empower students in attaining their educational goals.
-            </p>
-
-
-
 
             <br><br>
             <img src="images/scholar-logo.jpg" />
@@ -79,19 +90,25 @@ and open the template in the editor.
                 <strong>Marian Wright Edelman</strong>
             </p>
         </div>
+      </div>
 
-        <div id="footer">
-            <hr/>
-            <div id="footerItems">
-
+      <div class=footer-container>
+        <div class="footer">
+            <div class="footerItems">
+                <a class="footerItem" href="services.html">Services</a>
+                <a class="footerItem" href="partners.html">Partners</a>
+                <a class="footerItem" href="mission.html">Mission</a>
+                <a class="footerItem" href="vision.html">Vision</a>
+                <a class="footerItem" href="resources.html">Resources</a>
                 <a class="footerItem" href="about.html">About Us</a>
                 <a class="footerItem" href="contact.html">Contact Us</a>
             </div>
-        </div>
 
-        <div id="below-footer">
-            <p>&copy; 2015 RISE Inc., All rights reserved</p>
+            <div class="copyright">
+                <p>&copy; 2015 RISE Inc., All rights reserved</p>
+            </div>
         </div>
+      </div>
 
     </body>
 </html>

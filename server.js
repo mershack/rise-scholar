@@ -4,7 +4,7 @@ var app      = express(); 								// create our app w/ express
 const compression = require('compression');
 // var mongoose = require('mongoose'); 					// mongoose for mongodb
 // var port  	 = process.env.PORT || 8080; 				// set the port
-var port  	 = 80; 				// set the port
+var port  	 = 8080; 				// set the port
 
 // var database = require('./config/database'); 			// load the database config
 var morgan   = require('morgan');
