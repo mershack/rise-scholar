@@ -5,81 +5,113 @@ To change this template file, choose Tools | Templates
 and open the template in the editor.
 -->
 <html>
-    <head>
-        <title>Contact</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width">
-        <link href="rise.css" rel="stylesheet" type="text/css" />
-    </head>
-    <body>
-        <div id="beforeHeader">
-            
-        </div>
-        <div id="header">
-            <img src="images/rise-logo.png" height="70"/>    
-            <div id="headerItems">
-                <a class="headerItem" href="index.html">Home</a>
-                <a class="headerItem" href="services.html">What We Do</a>
-                <a class="headerItem" href="partners.html">Our Partners</a>
-                <a class="headerItem" href="mission.html">Mission</a>
-                <a class="headerItem" href="vision.html">Vision</a>
-                <a class="headerItem" href="objective.html">Objective</a>
-                <a class="headerItem" href="resources.html">Resources</a>
-                <a class="headerItem" href="about.html">About Us</a>
-                <a class="headerItem" href="contact.html">Contact Us</a>
-            </div>
+<head>
+  <title>Home</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <link href="rise.css"  rel="stylesheet" type="text/css" />
 
-        </div>
+  <!-- CSS -->
+  <!-- <link rel="stylesheet" href="../node_modules/angular-material/angular-material.min.css"> -->
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/1.0.0/angular-material.min.css">
+
+    <!-- Scripts -->
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-animate.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-aria.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-messages.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.0.0/angular-material.min.js"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.min.js"></script><!-- load angular -->
+  <script src="js/controllers/main.js"></script> <!-- load up our controller -->
+  <script src="js/services/api.js"></script> <!-- load our todo service -->
+  <script src="js/core.js"></script> <!-- load our main application -->
+
+
+  <!-- Your application bootstrap  -->
+   <script type="text/javascript">
+     /**
+      * You must include the dependency on 'ngMaterial'
+      */
+     angular.module('riseScholarApp', ['ngMaterial']);
+   </script>
+
+
+</head>
+<body ng-app="riseScholarApp">
+  <div class="header-container">
+    <div class="header" flex layout="row">
+      <div class="logo">
+        <img src="images/rise-logo.png" height="70"   />
+      </div>
+      <div class="nav" flex="80">
+        <a class="headerItem" href="index.html">Home</a>
+        <a class="headerItem" href="services.html">What We Do</a>
+        <a class="headerItem" href="partners.html">Our Partners</a>
+        <a class="headerItem" href="mission.html">Mission</a>
+        <a class="headerItem" href="vision.html">Vision</a>
+        <a class="headerItem" href="objective.html">Objective</a>
+        <a class="headerItem" href="resources.html">Resources</a>
+        <a class="headerItem" href="about.html">About Us</a>
+        <a class="headerItem current-nav" href="contact.html">Contact Us</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="wrapper">
         <div class="belowHeaderImage">
             <img src="images/servicesOfferedImage.png" />
         </div>
-       
-        <div id="mainContent">
-            
-            <h2>Contact</h2>
-            <p>
-                Contact information goes here...
-                <br/> <br/>
-                Address:
-                <br/> <br/>
-                email: <span class="email">riseinconline@yahoo.com</span>
-                <br/> <br/>
-                Skype: Inovations2011
-                <br/> <br/>
-                Tel: (347) 465-7797
-                     (760) 995-3012
-            </p>
-            
-        </div>
-        
-        
-        <br><br>
-            <img src="images/scholar-logo.jpg" />
-            <p>
+
+      <md-content id="mainContent" layout-padding>
+        <h2>Contact</h2>
+        <p>
+            Contact information goes here...
+            <br/> <br/>
+            Address:
+            <br/> <br/>
+            email: <span class="email">riseinconline@yahoo.com</span>
+            <br/> <br/>
+            Skype: Inovations2011
+            <br/> <br/>
+            Tel: (347) 465-7797
+                 (760) 995-3012
+        </p>
+
+        <br>
+        <div layout="row">
+            <img class="scholar-logo" src="images/scholar-logo.jpg" />
+
+            <div layout="column">
+              <div class="quotation-text">
                 <em>
-                    "Success doesn't come to you; you go to it."
+                  "Success doesn't come to you; you go to it."
+                </em>
+              </div>
+              <div class="quotation-author">
+                <strong>- Marva Collins</strong>
+              </div>
+            </div>
+          </div>
+        </md-content>
+      </div>
 
-                </em>  <br>
-
-                <strong>Marva Collins</strong>
-            </p>
-        
-
-        
-        
-        
-        
-        <div id="footer">
-             <hr/>
-            <div id="footerItems">
-               
+        <div class=footer-container>
+          <div class="footer">
+              <div class="footerItems">
+                <a class="footerItem" href="services.html">What We Do</a>
+                <a class="footerItem" href="partners.html">Our Partners</a>
+                <a class="footerItem" href="mission.html">Mission</a>
+                <a class="footerItem" href="vision.html">Vision</a>
+                <a class="footerItem" href="resources.html">Resources</a>
                 <a class="footerItem" href="about.html">About Us</a>
                 <a class="footerItem" href="contact.html">Contact Us</a>
-            </div>
-        </div>
-        
-        <div id="below-footer">
-            <p>&copy; 2015 RISE Inc., All rights reserved</p>
+              </div>
+
+              <div class="copyright">
+                  <p>&copy; 2015 RISE Inc., All rights reserved</p>
+              </div>
+          </div>
         </div>
 
     </body>

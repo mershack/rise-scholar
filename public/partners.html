@@ -5,85 +5,122 @@ To change this template file, choose Tools | Templates
 and open the template in the editor.
 -->
 <html>
-    <head>
-        <title>Our Partners</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width">
-        <link href="rise.css" rel="stylesheet" type="text/css" />
-    </head>
-    <body>
-        <div id="beforeHeader">
+<head>
+  <title>Home</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <link href="rise.css"  rel="stylesheet" type="text/css" />
 
-        </div>
-        <div id="header">
-            <img src="images/rise-logo.png" height="70"/>    
-            <div id="headerItems">
-                <a class="headerItem" href="index.html">Home</a>
-                <a class="headerItem" href="services.html">What We Do</a>
-                <a class="headerItem" href="partners.html">Our Partners</a>
-                <a class="headerItem" href="mission.html">Mission</a>
-                <a class="headerItem" href="vision.html">Vision</a>
-                <a class="headerItem" href="objective.html">Objective</a>
-                <a class="headerItem" href="resources.html">Resources</a>
-                <a class="headerItem" href="about.html">About Us</a>
-                <a class="headerItem" href="contact.html">Contact Us</a>
-            </div>
+  <!-- CSS -->
+  <!-- <link rel="stylesheet" href="../node_modules/angular-material/angular-material.min.css"> -->
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/1.0.0/angular-material.min.css">
 
-        </div>
-        <div class="belowHeaderImage">
-            <img src="images/servicesOfferedImage.png" />
-        </div>
+    <!-- Scripts -->
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-animate.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-aria.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-messages.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.0.0/angular-material.min.js"></script>
 
-        <div id="mainContent">
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.min.js"></script><!-- load angular -->
+  <script src="js/controllers/main.js"></script> <!-- load up our controller -->
+  <script src="js/services/api.js"></script> <!-- load our todo service -->
+  <script src="js/core.js"></script> <!-- load our main application -->
 
-            <h2>Our Partners</h2>
 
-            <h3>Schools and Colleges where our students are or have been</h3>
-            <ul>
-                <li><a href="">School A</a></li>
-                <li><a href="">School B</a></li>
-                <li><a href="">School C</a></li>
-                <li><a href="">College A</a></li>
-                <li><a href="">College B</a></li>
-                <li><a href="">College C</a></li>
-            </ul>
-            <h3>Scholarship sponsors for our students</h3>
-            <ul>
-                <li><a href="">Sponsor A</a></li>
-                <li><a href="">Sponsor B</a></li>
-                <li><a href="">Sponsor C</a></li>
-                <li><a href="">Sponsor D</a></li>
-            </ul>
+  <!-- Your application bootstrap  -->
+   <script type="text/javascript">
+     /**
+      * You must include the dependency on 'ngMaterial'
+      */
+     angular.module('riseScholarApp', ['ngMaterial']);
+   </script>
 
-            <br><br>
-            <img src="images/scholar-logo.jpg" />
-            <p>
-                <em>
+
+</head>
+<body ng-app="riseScholarApp">
+  <div class="header-container">
+    <div class="header" flex layout="row">
+      <div class="logo">
+        <img src="images/rise-logo.png" height="70"   />
+      </div>
+      <div class="nav" flex="80">
+        <a class="headerItem" href="index.html">Home</a>
+        <a class="headerItem" href="services.html">What We Do</a>
+        <a class="headerItem current-nav" href="partners.html">Our Partners</a>
+        <a class="headerItem" href="mission.html">Mission</a>
+        <a class="headerItem" href="vision.html">Vision</a>
+        <a class="headerItem" href="objective.html">Objective</a>
+        <a class="headerItem" href="resources.html">Resources</a>
+        <a class="headerItem" href="about.html">About Us</a>
+        <a class="headerItem" href="contact.html">Contact Us</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="wrapper">
+      <div class="belowHeaderImage">
+          <img src="images/graduation.jpg" />
+      </div>
+
+      <md-content id="mainContent" layout-padding>
+          <h2>Our Partners</h2>
+
+          <h3>Schools and Colleges where our students are or have been</h3>
+          <ul>
+              <li><a href="">School A</a></li>
+              <li><a href="">School B</a></li>
+              <li><a href="">School C</a></li>
+              <li><a href="">College A</a></li>
+              <li><a href="">College B</a></li>
+              <li><a href="">College C</a></li>
+          </ul>
+          <h3>Scholarship sponsors for our students</h3>
+          <ul>
+              <li><a href="">Sponsor A</a></li>
+              <li><a href="">Sponsor B</a></li>
+              <li><a href="">Sponsor C</a></li>
+              <li><a href="">Sponsor D</a></li>
+          </ul>
+
+          <br><br>
+          <div layout="row">
+              <img class="scholar-logo" src="images/scholar-logo.jpg" />
+              <div layout="column">
+                <div class="quotation-text">
+                  <em>
                     "Watch your thoughts, for they become words.
                     Watch your words, for they become actions.
                     Watch your actions, for they become habits.
                     Watch your habits, for they become character.
                     Watch your character, for it becomes your
                     destiny."
-
-                </em>  <br>
-                <strong>Anonymous</strong>
-            </p>
-
-        </div>
-
-        <div id="footer">
-            <hr/>
-            <div id="footerItems">
-
-                <a class="footerItem" href="about.html">About Us</a>
-                <a class="footerItem" href="contact.html">Contact Us</a>
+                  </em>
+                </div>
+                <div class="quotation-author">
+                  <strong>- Anonymous</strong>
+                </div>
+              </div>
             </div>
+      </md-content>
+    </div>
+
+    <div class=footer-container>
+      <div class="footer">
+        <div class="footerItems">
+          <a class="footerItem" href="services.html">What We Do</a>
+          <a class="footerItem" href="partners.html">Our Partners</a>
+          <a class="footerItem" href="mission.html">Mission</a>
+          <a class="footerItem" href="vision.html">Vision</a>
+          <a class="footerItem" href="resources.html">Resources</a>
+          <a class="footerItem" href="about.html">About Us</a>
+          <a class="footerItem" href="contact.html">Contact Us</a>
         </div>
 
-        <div id="below-footer">
-            <p>&copy; 2015 RISE Inc., All rights reserved</p>
+        <div class="copyright">
+          <p>&copy; 2015 RISE Inc., All rights reserved</p>
         </div>
-
-    </body>
+      </div>
+    </div>
+  </body>
 </html>

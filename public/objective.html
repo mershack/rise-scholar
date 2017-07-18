@@ -5,71 +5,109 @@ To change this template file, choose Tools | Templates
 and open the template in the editor.
 -->
 <html>
-    <head>
-        <title>Objective</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width">
-        <link href="rise.css" rel="stylesheet" type="text/css" />
-    </head>
-    <body>
-        <div id="beforeHeader">
+<head>
+  <title>Home</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <link href="rise.css"  rel="stylesheet" type="text/css" />
 
+  <!-- CSS -->
+  <!-- <link rel="stylesheet" href="../node_modules/angular-material/angular-material.min.css"> -->
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/1.0.0/angular-material.min.css">
+
+    <!-- Scripts -->
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-animate.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-aria.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-messages.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.0.0/angular-material.min.js"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.min.js"></script><!-- load angular -->
+  <script src="js/controllers/main.js"></script> <!-- load up our controller -->
+  <script src="js/services/api.js"></script> <!-- load our todo service -->
+  <script src="js/core.js"></script> <!-- load our main application -->
+
+
+  <!-- Your application bootstrap  -->
+   <script type="text/javascript">
+     /**
+      * You must include the dependency on 'ngMaterial'
+      */
+     angular.module('riseScholarApp', ['ngMaterial']);
+   </script>
+
+
+</head>
+  <body ng-app="riseScholarApp">
+    <div class="header-container">
+      <div class="header" flex layout="row">
+        <div class="logo">
+          <img src="images/rise-logo.png" height="70"   />
         </div>
-        <div id="header">
-            <img src="images/rise-logo.png"/>    
-            <div id="headerItems">
-                <a class="headerItem" href="index.html">Home</a>
-                <a class="headerItem" href="services.html">What We Do</a>
-                <a class="headerItem" href="partners.html">Our Partners</a>
-                <a class="headerItem" href="mission.html">Mission</a>
-                <a class="headerItem" href="vision.html">Vision</a>
-                <a class="headerItem" href="objective.html">Objective</a>
-                <a class="headerItem" href="resources.html">Resources</a>
-                <a class="headerItem" href="about.html">About Us</a>
-                <a class="headerItem" href="contact.html">Contact Us</a>
-            </div>
-
+        <div class="nav" flex="80">
+          <a class="headerItem" href="index.html">Home</a>
+          <a class="headerItem" href="services.html">What We Do</a>
+          <a class="headerItem" href="partners.html">Our Partners</a>
+          <a class="headerItem" href="mission.html">Mission</a>
+          <a class="headerItem" href="vision.html">Vision</a>
+          <a class="headerItem current-nav" href="objective.html">Objective</a>
+          <a class="headerItem" href="resources.html">Resources</a>
+          <a class="headerItem" href="about.html">About Us</a>
+          <a class="headerItem" href="contact.html">Contact Us</a>
         </div>
-        <div class="belowHeaderImage">
-            <img src="images/aboutUsImage.png" />
-        </div>
+      </div>
+    </div>
+    <div class="wrapper">
+      <div class="belowHeaderImage">
+          <img src="images/aboutUsImage.png" />
+      </div>
 
-        <div id="mainContent">
+      <md-content id="mainContent" layout-padding>
+        <h2>Objective</h2>
 
-            <h2>Objective</h2>
+        <p>
+          R.I.S.E will groom, guide, and deliver tomorrow's leaders to colleges and universities
+          using phenomenal breakthroughs that will significantly impact our scholars' persistence,
+          college retention, and ultimate graduation.
+        </p>
 
-            <p>
-                R.I.S.E will groom, guide, and deliver tomorrow's leaders to colleges and universities
-                using phenomenal breakthroughs that will significantly impact our scholars' persistence,
-                college retention, and ultimate graduation.
-            </p>
+        <br><br>
 
-            <br><br>
-            <img src="images/scholar-logo.jpg" />
-            <p>
+        <div layout="row">
+            <img class="scholar-logo" src="images/scholar-logo.jpg" />
+
+            <div layout="column">
+              <div class="quotation-text">
                 <em>
-                    "The function of education is to teach one to think
-                    intensively and to think critically. Intelligence plus
-                    character - that is the goal of true education."
-                </em>  <br>
-
-                <strong>Martin Luther King</strong>
-            </p>
-
-        </div>
-
-        <div id="footer">
-            <hr/>
-            <div id="footerItems">
-
-                 <a class="footerItem" href="about.html">About Us</a>
-                <a class="footerItem" href="contact.html">Contact Us</a>
+                  "The function of education is to teach one to think
+                  intensively and to think critically. Intelligence plus
+                  character - that is the goal of true education."
+                </em>
+              </div>
+              <div class="quotation-author">
+                <strong>- Martin Luther King</strong>
+              </div>
             </div>
-        </div>
+          </div>
+      </md-content>
+    </div>
 
-        <div id="below-footer">
-            <p>&copy; 2015 RISE Inc., All rights reserved</p>
-        </div>
+    <div class=footer-container>
+      <div class="footer">
+          <div class="footerItems">
+            <a class="footerItem" href="services.html">What We Do</a>
+            <a class="footerItem" href="partners.html">Our Partners</a>
+            <a class="footerItem" href="mission.html">Mission</a>
+            <a class="footerItem" href="vision.html">Vision</a>
+            <a class="footerItem" href="resources.html">Resources</a>
+            <a class="footerItem" href="about.html">About Us</a>
+            <a class="footerItem" href="contact.html">Contact Us</a>
+          </div>
 
-    </body>
+          <div class="copyright">
+              <p>&copy; 2015 RISE Inc., All rights reserved</p>
+          </div>
+      </div>
+    </div>
+  </body>
 </html>
